@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e8f5e9; /* Verde claro */
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background-color: white;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 128, 0, 0.2);
+      width: 360px;
+      text-align: center;
+    }
+    h2 {
+      color: #388e3c; /* Verde escuro */
+      margin-bottom: 25px;
+      font-weight: 700;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #2e7d32; /* Verde médio */
+      text-align: left;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #c8e6c9;
+      border-radius: 6px;
+      margin-bottom: 20px;
+      font-size: 1rem;
+      box-sizing: border-box;
+      transition: border-color 0.3s ease;
+    }
+    input[type="text"]:focus, input[type="password"]:focus {
+      border-color: #4caf50;
+      outline: none;
+      box-shadow: 0 0 5px rgba(76, 175, 80, 0.6);
+    }
+    input[type="submit"],
+    input[type="reset"] {
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      padding: 12px 22px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      margin: 0 10px;
+      min-width: 110px;
+      transition: background-color 0.3s ease;
+    }
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+      background-color: #388e3c;
+    }
+  </style>
+</head>
+<body>
+  <div class="container" role="main">
+    <form name="login" action="valida.php" method="post" novalidate>
+      <h2>Login</h2>
+      <label for="usuario">Usuário</label>
+      <input type="text" id="usuario" name="usuario" required autofocus />
+      
+      <label for="senha">Senha</label>
+      <input type="password" id="senha" name="senha" required />
+      
+      <div>
+        <input type="submit" value="ENVIAR" />
+        <input type="reset" value="LIMPAR" />
+      </div>
+    </form>
+  </div>
+</body>
+</html>

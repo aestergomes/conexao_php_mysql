@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cadastro de Cliente</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e8f5e9; /* Verde claro */
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0, 128, 0, 0.2);
+            width: 400px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #388e3c; /* Verde escuro */
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #2e7d32; /* Verde médio */
+            text-align: left;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #c8e6c9; /* Verde muito claro */
+            border-radius: 6px;
+            margin-bottom: 15px;
+            font-size: 1rem;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            border-color: #4caf50;
+            outline: none;
+            box-shadow: 0 0 5px rgba(76, 175, 80, 0.6);
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #4caf50; /* Verde */
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px 10px 0 10px;
+            min-width: 100px;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #388e3c; /* Verde escuro ao passar o mouse */
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 30px;
+            text-decoration: none;
+            color: #4caf50; /* Verde */
+            font-weight: 700;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #2e7d32;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" role="main">
+        <h1>Cadastro de Cliente</h1>
+        <form name="cliente" action="insere.php" method="post" novalidate>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" size="30" maxlength="60" required />
+
+            <label for="ender">Endereço</label>
+            <input type="text" id="ender" name="ender" size="30" maxlength="60" required />
+
+            <label for="fone">Telefone</label>
+            <input type="text" id="fone" name="fone" size="30" maxlength="15" required />
+
+            <div>
+                <input type="submit" value="SALVAR" />
+                <input type="reset" value="LIMPAR" />
+            </div>
+        </form>
+        <a href="principal.php" aria-label="Voltar ao menu principal">← VOLTAR</a>
+    </div>
+</body>
+</html>
+
