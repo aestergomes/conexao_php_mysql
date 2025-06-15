@@ -75,4 +75,4 @@ Senha: zezin1234
 
 ### 📝 Observações
 - Este projeto foi desenvolvido como atividade prática para fixar conhecimentos em conexão com banco de dados, manipulação de dados com PHP, e funcionamento básico de um servidor local com XAMPP;
-- Há também um arquivo chamado preview_site no final do repositório que mostra visualmente a interface do sistema.
+- Há também um arquivo chamado `preview_site` no repositório que mostra visualmente a interface do sistema.
